@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Reset and Base */
 * {
   margin: 0;
   padding: 0;
@@ -7,127 +7,67 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  color: #161616;
   background-color: #ffffff;
-  color: #333;
-  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Header */
-.main-header {
-  background-color: #0d6efd;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .logo {
-  height: 50px;
+  height: 40px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .nav-links a {
-  color: white;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #ffdd57;
+  color: #161616;
+  font-weight: 600;
 }
 
 /* Hero Section */
 .hero {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: cover;
-  display: block;
-}
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(13, 110, 253, 0.8);
-  padding: 30px;
-  border-radius: 8px;
-}
-
-.hero-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-/* Profile Section */
-.profile {
-  display: flex;
-  align-items: center;
-  padding: 40px;
-  gap: 40px;
   background-color: #f5f5f5;
-  flex-wrap: wrap;
-}
-
-.profile-pic {
-  width: 200px;
-  border-radius: 50%;
-}
-
-.profile-text h2 {
-  margin-bottom: 10px;
-}
-
-/* Features Section */
-.features {
-  padding: 40px;
+  padding: 100px 0;
   text-align: center;
 }
 
-.features h2 {
+.hero-title {
+  font-size: 48px;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
-.feature-image {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto 20px auto;
-  display: block;
+.hero-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #5e5e5e;
 }
 
-.features ul {
-  list-style: disc;
-  margin: 0 auto;
-  padding-left: 20px;
-  text-align: left;
-  max-width: 400px;
-}
-
-/* Footer */
-.main-footer {
-  background-color: #0d6efd;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-}
-
-.footer-img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  margin-bottom: 10px;
+.hero-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff6565;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
 }
