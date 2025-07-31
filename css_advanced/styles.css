@@ -190,3 +190,52 @@ header {
 .membership-form button:hover {
   background-color: #e14e4e; /* Darker shade on hover */
 }
+/* FAQ Section */
+.faq {
+  background-color: #ffffff; /* Use Figma background color */
+  padding: 80px 20px;
+}
+
+.faq-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #161616;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 0;
+  cursor: pointer;
+  color: #333333;
+}
+
+.faq-question:focus {
+  outline: none;
+  color: #ff6565; /* Accent color */
+}
+
+.faq-answer {
+  padding: 0 0 15px 0;
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.5;
+  display: none; /* Hidden by default */
+}
+
+/* Show answer when faq-item has class 'active' */
+.faq-item.active .faq-answer {
+  display: block;
+}
