@@ -139,3 +139,54 @@ header {
   color: #555555;
   line-height: 1.4;
 }
+/* Membership Section */
+.membership {
+  background-color: #f9f9f9; /* Use exact color from Figma */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.membership-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #161616;
+  margin-bottom: 15px;
+}
+
+.membership-description {
+  font-size: 18px;
+  color: #555555;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.membership-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.membership-form input[type="email"] {
+  flex: 1;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.membership-form button {
+  padding: 15px 30px;
+  background-color: #ff6565; /* Match Figma button color */
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.membership-form button:hover {
+  background-color: #e14e4e; /* Darker shade on hover */
+}
