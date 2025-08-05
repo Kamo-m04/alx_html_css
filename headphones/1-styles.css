@@ -1,0 +1,387 @@
+/* Reset + Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #FF6565;
+  --text-color-light: #fff;
+  --text-color-dark: #000;
+  --bg-color-dark: #1d1d1d;
+  --bg-color-light: #fff;
+  --font: 'Source Sans Pro', sans-serif;
+}
+
+/* Body */
+body {
+  font-family: var(--font);
+  background-color: var(--bg-color-light);
+  color: var(--text-color-dark);
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+  padding: 40px 0 80px;
+  color: var(--text-color-light);
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo img {
+  width: 160px;
+}
+
+/* Navigation */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--text-color-light);
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover,
+.nav-list a:active {
+  color: var(--primary-color);
+}
+
+/* Hero */
+.hero {
+  margin-top: 60px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: 0.9;
+}
+
+/* What We Do Section */
+.what-we-do {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-dark);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.what-we-do h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.what-we-do p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.service img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 400;
+}
+
+/* Our Results Section */
+.our-results {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-light);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.our-results h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.results-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.result-card {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  background-color: #292929;
+  padding: 30px 20px;
+  border-radius: 8px;
+}
+
+.result-card h3 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.result-card p {
+  font-size: 1.2rem;
+  color: #ccc;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .services,
+  .results-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+}
+.contact {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact .section-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact .section-subtitle {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form .btn {
+  background-color: #ff6565;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.contact-form .btn:hover,
+.contact-form .btn:active {
+  opacity: 0.9;
+}
+.footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+/* What we do section */
+.what-we-do {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.what-we-do-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.what-we-do-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.what-we-do-item .icon {
+  font-size: 50px;
+  color: #ff6565;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.what-we-do-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.what-we-do-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+.what-we-do {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.icon {
+  font-size: 50px;
+  color: #FF6565;
+  display: block;
+  margin-bottom: 20px;
+}
+a:focus,
+button:focus,
+.service-card:focus-within {
+  outline: 2px solid #FF6565;
+  outline-offset: 3px;
+}
