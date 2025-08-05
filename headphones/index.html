@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Headphones landing page - ALX HTML/CSS project" />
+  <title>Headphones</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="container">
+      <a href="#" class="logo" aria-label="Headphones Logo">Headphones</a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <h1>Experience Sound Like Never Before</h1>
+          <p>Discover premium quality headphones designed for music lovers and audiophiles. Immerse yourself in crystal-clear sound and unmatched comfort.</p>
+          <a href="#pricing" class="btn-primary">Shop Now</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/headphones.png" alt="Premium headphones" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Why Choose Our Headphones?</h2>
+        <div class="features-grid">
+          <article class="feature-item">
+            <h3>Superior Sound</h3>
+            <p>Experience crisp, clear, and balanced audio quality that brings your music to life.</p>
+          </article>
+          <article class="feature-item">
+            <h3>Comfort Fit</h3>
+            <p>Designed with ergonomic ear cushions for all-day comfort.</p>
+          </article>
+          <article class="feature-item">
+            <h3>Wireless Freedom</h3>
+            <p>Enjoy seamless Bluetooth connectivity with long battery life.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <h2>Choose Your Perfect Headphones</h2>
+        <div class="pricing-cards">
+          <article class="pricing-card">
+            <h3>Basic</h3>
+            <p class="price">$49.99</p>
+            <ul>
+              <li>Good sound quality</li>
+              <li>Comfort fit</li>
+              <li>Wired connection</li>
+            </ul>
+            <a href="#contact" class="btn-primary">Buy Now</a>
+          </article>
+          <article class="pricing-card">
+            <h3>Pro</h3>
+            <p class="price">$99.99</p>
+            <ul>
+              <li>Superior sound quality</li>
+              <li>Comfort fit with noise cancellation</li>
+              <li>Wireless Bluetooth</li>
+            </ul>
+            <a href="#contact" class="btn-primary">Buy Now</a>
+          </article>
+          <article class="pricing-card">
+            <h3>Elite</h3>
+            <p class="price">$149.99</p>
+            <ul>
+              <li>Studio-grade sound</li>
+              <li>Premium comfort and design</li>
+              <li>Wireless + noise cancellation + long battery</li>
+            </ul>
+            <a href="#contact" class="btn-primary">Buy Now</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+      <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="reviews-list">
+          <blockquote class="review-item">
+            <p>"The sound quality is amazing and the comfort is unmatched. Best headphones I've ever owned!"</p>
+            <footer>- Sarah M.</footer>
+          </blockquote>
+          <blockquote class="review-item">
+            <p>"Wireless connectivity is seamless and battery life lasts all day. Highly recommend!"</p>
+            <footer>- James L.</footer>
+          </blockquote>
+          <blockquote class="review-item">
+            <p>"Great value for the price. Noise cancellation works perfectly."</p>
+            <footer>- Emily R.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST" class="contact-form" aria-label="Contact form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Headphones. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
